@@ -10,7 +10,7 @@ const handler = async (m, {conn, isROwner, usedPrefix, command, text}) => {
   const ar = Object.keys(plugins);
   const ar1 = ar.map((v) => v.replace('.js', ''));
   
-  const imagurl = 'https://i.postimg.cc/d1LW67hm/file-00000000c0ec622f8bff523637740179.png';
+  const imagurl = 'https://files.catbox.moe/zacb89.jpg';
   
   const mediaMessage = await prepareWAMessageMedia({ image: { url: imagurl } }, { upload: conn.waUploadToServer });
   

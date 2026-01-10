@@ -7,9 +7,9 @@ let handler = async (m, { conn, args }) => {
     const sortedOnline = uniqueOnline.sort((a, b) => a.split('@')[0].localeCompare(b.split('@')[0]));
 
     const onlineList = sortedOnline.map((k, i) => `*${i + 1}.* @${k.split('@')[0]}`).join('\n') || 'لا يوجد مستخدمين على الانترنت في هذا الوقت.';
-    await conn.sendMessage(m.chat, { react: { text: '🌐', key: m.key } })
+    await conn.sendMessage(m.chat, { react: { text: '😼', key: m.key } })
 
-    await conn.reply(m.chat, `*🌐 قائمة المتصلين بالانترنيت الآن:*\n${onlineList}`, m, {
+    await conn.reply(m.chat, `*😼 قائمة المتصلين بالانترنيت الآن:*\n${onlineList}`, m, {
       contextInfo: { mentionedJid: sortedOnline }
     });
   } catch (e) {

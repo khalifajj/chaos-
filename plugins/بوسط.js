@@ -161,7 +161,7 @@ const tips = [
         "الحياة مليئة بالتحديات، لكن الثبات هو مفتاح النجاح. 🌟" 
  ] 
 const randomImage = tips[Math.floor(Math.random() * tips.length)];
-   var messa = await prepareWAMessageMedia({ image: { url:'https://i.postimg.cc/d1LW67hm/file-00000000c0ec622f8bff523637740179.png' } }, { upload: conn.waUploadToServer });
+   var messa = await prepareWAMessageMedia({ image: { url:'https://files.catbox.moe/zacb89.jpg' } }, { upload: conn.waUploadToServer });
 let msg = generateWAMessageFromContent(m.chat, {
   viewOnceMessage: {
     message: {
@@ -174,7 +174,7 @@ let msg = generateWAMessageFromContent(m.chat, {
             text: `> *${randomImage}*\n*── ⋆⋆ ── ⋆⋆ ── ⋆⋆ ── ⋆⋆ ── ⋆⋆*`
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
-            text: "𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻"
+            text: "𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻"
           }),
           header: proto.Message.InteractiveMessage.Header.create({
             title: "*── ⋆⋆ ── ⋆⋆ ── ⋆⋆ ── ⋆⋆ ── ⋆⋆*",

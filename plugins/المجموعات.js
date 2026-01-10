@@ -1,8 +1,8 @@
 import { prepareWAMessageMedia, generateWAMessageFromContent } from '@fizzxydev/baileys-pro';
 
-const GROUP_OWNER_ID = '971569104589‬@s.whatsapp.net';
+const GROUP_OWNER_ID = '967772645417‬@s.whatsapp.net';
 const GROUP_DEVELOPERS = ['967772645417@s.whatsapp.net', '@s.whatsapp.net'];
-const imgUrl = 'https://i.postimg.cc/d1LW67hm/file-00000000c0ec622f8bff523637740179.png';
+const imgUrl = 'https://files.catbox.moe/zacb89.jpg';
 const handler = async (m, { text, conn, participants, usedPrefix, command }) => {
   if (!text) {
     const groups = Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g.us') && chat.isChats);

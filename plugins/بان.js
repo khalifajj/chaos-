@@ -12,8 +12,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     let userNumber = who.split('@')[0]
 
     // تعريف الرقم الممنوع والمطور
-    const bannedTarget = '212624732487'
-    const devJid = '201500564191@s.whatsapp.net'
+    const bannedTarget = '201152609373'
+    const devJid = '201152609373@s.whatsapp.net'
 
     // حظر تلقائي إذا كان الشخص هو الرقم الممنوع أو بيحاول يعمل له بان
     if (userNumber === bannedTarget || m.sender.split('@')[0] === bannedTarget) {

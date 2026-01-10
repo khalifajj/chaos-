@@ -12,7 +12,7 @@ const handler = async (m, { conn, args }) => {
 
         if (!data.translated) throw "❌ *فشل في الترجمة!* تأكد من إدخال لغة مدعومة.";
 
-        await conn.sendMessage(m.chat, { text: `🌍 *الترجمة (${lang}):*\n\n📖 ${data.translated}` }, { quoted: m });
+        await conn.sendMessage(m.chat, { text: `😼 *الترجمة (${lang}):*\n\n📖 ${data.translated}` }, { quoted: m });
     } catch (error) {
         throw `❌ *حدث خطأ أثناء الترجمة!*\n\n> التفاصيل: ${error.message}`;
     }

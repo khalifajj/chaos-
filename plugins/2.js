@@ -62,7 +62,7 @@ const handler = async (m, { conn, text, command }) => {
 
             const sticker = new Sticker(data, {
                 type: 'full',
-                pack: '𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻', // هنا اسم الحزمة
+                pack:  '𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻', // هنا اسم الحزمة
                 author: 'الحياة حلوة مع ايتادوري',     // هنا اسم المؤلف
                 quality: 70
             });

@@ -40,8 +40,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
         var messa = await prepareWAMessageMedia({ image: {url: randomVideo.thumbnail}}, { upload: conn.waUploadToServer });
 
-        const imagurl = 'https://i.postimg.cc/d1LW67hm/file-00000000c0ec622f8bff523637740179.png';
-        let chname = '𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻';
+        const imagurl = 'https://files.catbox.moe/zacb89.jpg';
+        let chname = '𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻';
         let chid = '120363420242552568@newsletter';
         
         const captain = `

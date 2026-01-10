@@ -36,7 +36,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         const messageContent = {
             buttonsMessage: {
                 contentText: teksnya,
-                footerText: '𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻',
+                footerText: ' 𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻',
                 buttons: [
                     {
                         buttonId: `.تحميل_هنا ${file.path}`,

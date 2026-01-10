@@ -8,11 +8,11 @@ let handler = async (m, { conn, text, participants, isOwner, isAdmin }) => {
     },
     message: {
       videoMessage: {
-        title: '𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻 ❞┊🍁',
+        title: ' 𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻 ❞┊😼',
         h: 'Hmm',
         seconds: 99999,
         gifPlayback: true,
-        caption: '𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻 ❞┊🍁',
+        caption: '❞ 𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻┊😼',
         jpegThumbnail: Buffer.alloc(0)
       }
     }

@@ -107,7 +107,7 @@ const handler = async (m, { text, usedPrefix, command }) => {
           message: {
             interactiveMessage: {
               body: { text: prayerMessage },
-              footer: { text: '𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻 ❞┊' },
+              footer: { text: '𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻 ❞┊' },
               header: {
                 hasMediaAttachment: true,
                 imageMessage: mediaMessageWithPrayer.imageMessage

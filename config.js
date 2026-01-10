@@ -15,14 +15,10 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 
 globalThis.owner = [
 
-  ['963981031097', 'askanor', true],
+  ['201152609373', 'inom', true],
 
   ['967772645417', '𝒁𝒂𝒐𝒇𝒂𝒏 🐦‍🔥', true],
-  ['201158195160','zor',true],
-  ['212709199287','noxs',true],
-  ['966578010443','hazam',true],
     ['967711516106','انا2', true],
-    ['201208375610','yog',true], 
 ]
 
 globalThis.mods = []
@@ -42,44 +38,7 @@ global.obtenerQrWeb = 0; //Solo valores: 1 o 0
 //Kurt18: Aplica para Host Render.com
 global.keepAliveRender = 0; //Solo valores: 1 o 0
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-global.nbot = ['𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻', '𝕭𝕬𝕭𝖄𝕷𝕺𝕹⦓🍁⦔𝕭𝕺𝕿', '𝓑𝓐𝓤𝓛𝓞𝓝𝓐 ⦓🍁⦔𝓑𝓞𝓣"', '🅑︎🅐︎🅑︎🅨︎🅛︎🅞︎🅝︎⦓🍁⦔🅑︎🅞︎🅣'];
 
-global.wm = await nbot[Math.floor(Math.random() * nbot.length)];
-                                  
-global.postarIconUrl = [ 'https://files.catbox.moe/1ozult.jpg', 'https://files.catbox.moe/1ozult.jpg', 'https://files.catbox.moe/1ozult.jpg', 'https://files.catbox.moe/1ozult.jpg', 'https://files.catbox.moe/1ozult.jpg', 'https://files.catbox.moe/1ozult.jpg'];
- 
-
-
- global.postarIcon = await postarIconUrl[Math.floor(Math.random() * postarIconUrl.length)];
- 
-
- 
-global.adsRandomChannel = {
-
-newsletterJid: global.randomchannelId, 
-
-newsletterName: global.randomchannelName, 
-
-serverMessageId: 100
-
-};
-
-global.adsAdReply = {
-
-title: '◈─┄┄┄┄┄┄〘 𝐇𝐎𝐌𝐄 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 〙┄┄┄┄┄┄─◈',
-
-body: '⎆┄┄┄┄〔 قنــاة الــدعم 〕┄┄┄┄⌲',
-
-sourceUrl: global.channelUrl,
-
-thumbnailUrl: global.postarIcon,
-
-mediaType: 1,
-
-renderLargerThumbnail: true
-
-};
-global.imagen1 = await postarIconUrl[Math.floor(Math.random() * postarIconUrl.length)];
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 // ❰❰ methodCode ❱❱
 // [ES] > Agregue el número del Bot en "botNumberCode" si desea recibir código de 8 dígitos sin registrar el número en la consola.
@@ -148,7 +107,7 @@ global.desc2 = '' // Add long description (90 caractres max) (Este parámetro se
 global.country = '' // Add country, example: 🇪🇨
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
-global.packname = `𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻`
+global.packname = `𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻`
 global.author = ``
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
@@ -157,7 +116,7 @@ global.author = ``
 // [EN] > BOT VERSION INFORMATION, PLEASE KEEP THIS UNCHANGED, WE STRIVE DAILY TO PROVIDE YOU WITH A BOT FOR THE COMMUNITY, BE GRATEFUL
 global.vs = "1.7.0"
 global.vsJB = "5.0 (Beta)"
-global.gt = "𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻"
+global.gt = "𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻"
 global.imagen = fs.readFileSync('./Menu2.jpg')
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
@@ -184,7 +143,7 @@ global.eg = '⋄┄┄〘 تمت بنجاح🧞‍♂️🩸 〙┄┄⋄\n\n'
 global.exito = eg
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-global.wm = "𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻"
+global.wm = "𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻"
 global.igfg = "967772645417"
 global.nomorown = "967772645417"
 global.pdoc = ["application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/vnd.ms-excel", "application/msword", "application/pdf", "text/rtf"]

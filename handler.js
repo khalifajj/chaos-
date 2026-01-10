@@ -41,7 +41,6 @@ return;
 if (global.db.data == null) await global.loadDatabase()
 try {
 m = smsg(this, m) || m
-
 if (!m)
 return
 m.exp = 0
@@ -1070,8 +1069,8 @@ let settings = global.db.data.settings[this.user.jid]
 if (typeof settings !== 'object') global.db.data.settings[this.user.jid] = {}
 if (settings) {
 if (!('self' in settings)) settings.self = false
-if (!('autoread' in settings)) settings.autoread = true
-if (!('autoread2' in settings)) settings.autoread2 = true
+if (!('autoread' in settings)) settings.autoread = false
+if (!('autoread2' in settings)) settings.autoread2 = false
 if (!('restrict' in settings)) settings.restrict = false
 if (!('temporal' in settings)) settings.temporal = false
 if (!('anticommand' in settings)) settings.anticommand = false
@@ -1083,8 +1082,8 @@ if (!('jadibotmd' in settings)) settings.jadibotmd = true
 if (!('prefix' in settings)) settings.prefix = opts['prefix'] || '*/i!#$%+£¢€¥^°=¶∆×÷π√✓©®&.\\-.@';
 } else global.db.data.settings[this.user.jid] = {
 self: false,
-autoread: true,
-autoread2: true,
+autoread: false,
+autoread2: false,
 restrict: false,
 temporal: false,
 antiPrivate: false,
@@ -1304,18 +1303,18 @@ m.reply('Exp limit') // Hehehe
 else               
 if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
 //this.reply(m.chat, `🐈 𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎`, m)
-this.sendMessage(m.chat, {text: `*فقير*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: '⋄┄┄〘 𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻 〙┄┄⋄   ', previewType: 0, thumbnail: gataImg, sourceUrl: accountsgb }}}, { quoted: m })         
+this.sendMessage(m.chat, {text: `*فقير*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: '⋄┄┄〘 𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻 〙┄┄⋄   ', previewType: 0, thumbnail: gataImg, sourceUrl: accountsgb }}}, { quoted: m })         
 continue     
 }
 			
 m.exp += xp
 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-this.sendMessage(m.chat, {text: `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: '⋄┄┄〘 𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻 〙┄┄⋄  ', previewType: 0, thumbnail: gataImg, sourceUrl: accountsgb }}}, { quoted: m })         
+this.sendMessage(m.chat, {text: `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: '⋄┄┄〘 𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻 〙┄┄⋄  ', previewType: 0, thumbnail: gataImg, sourceUrl: accountsgb }}}, { quoted: m })         
 //this.reply(m.chat, `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`, m)
 continue //Sin límite
 }
 if (plugin.level > _user.level) {
-this.sendMessage(m.chat, {text: `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: '⋄┄┄〘 𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻 〙┄┄⋄ ', previewType: 0, thumbnail: gataImg, sourceUrl: accountsgb }}}, { quoted: m })         
+this.sendMessage(m.chat, {text: `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: '⋄┄┄〘 𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻 〙┄┄⋄ ', previewType: 0, thumbnail: gataImg, sourceUrl: accountsgb }}}, { quoted: m })         
 //this.reply(m.chat, `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`, m)
 continue // Si no se ha alcanzado el nivel
 }
@@ -1475,7 +1474,7 @@ pp = await this.profilePictureUrl(user, 'image')
 let apii = await this.getFile(pp)                                      
 const botTt2 = groupMetadata.participants.find(u => this.decodeJid(u.id) == this.user.jid) || {} 
 const isBotAdminNn = botTt2?.admin === "admin" || false
-text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '⋄┄┄〘 𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻 〙┄┄⋄') :
+text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '⋄┄┄〘 𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻 〙┄┄⋄') :
 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
 			    
 if (chat.antifake && isBotAdminNn && action === 'add') {
@@ -1502,7 +1501,7 @@ mentionedJid:[user],
 "showAdAttribution": true,
 "renderLargerThumbnail": true,
 "thumbnail": apii.data, 
-"title": [wm, '⋄┄┄〘 𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻〙┄┄⋄ '].getRandom(),
+"title": [wm, '⋄┄┄〘 𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻〙┄┄⋄ '].getRandom(),
 "containsAutoReply": true,
 "mediaType": 1, 
 sourceUrl: 'https://github.com/GataNina-Li/GataBot-MD' }}}, { quoted: fkontak2 })
@@ -1597,7 +1596,7 @@ restrict: lenguajeGB['smsRestrict'](),
 //if (msg) return m.reply(msg)
 	
 let tg = { quoted: m, userJid: conn.user.jid }
-let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, '⋄┄┄〘 𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻 〙┄┄⋄'].getRandom(), thumbnail: gataImg, sourceUrl: accountsgb }}}}, tg)
+let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, '⋄┄┄〘 𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻 〙┄┄⋄'].getRandom(), thumbnail: gataImg, sourceUrl: accountsgb }}}}, tg)
 if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
 }
 

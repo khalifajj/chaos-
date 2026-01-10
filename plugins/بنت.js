@@ -18,7 +18,7 @@ let handler = async (m, {
     let json = await res.json();
     if (!json.url) throw 'Error!';
     
-    await conn.sendFile(m.chat, json.url, 'waifu.jpg', "𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻 ❞┊ | 🐼❤️*", m);
+    await conn.sendFile(m.chat, json.url, 'waifu.jpg', "𝑩𝒂 𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻 ❞┊ | 🐼❤️*", m);
     
     // إرسال الزر بعد الصورة
     await conn.sendMessage(m.chat, {

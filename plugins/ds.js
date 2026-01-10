@@ -13,7 +13,7 @@ const handler = async (m, { conn, text }) => {
 
   // 🔹 إذا لم يُحدد خيار، إرسال زر تفاعلي
   if (!text) {
-    const coverImageUrl = 'https://i.postimg.cc/d1LW67hm/file-00000000c0ec622f8bff523637740179.png';
+    const coverImageUrl = 'https://files.catbox.moe/zacb89.jpg';
     const messa = await prepareWAMessageMedia(
       { image: { url: coverImageUrl } },
       { upload: conn.waUploadToServer }
@@ -21,9 +21,9 @@ const handler = async (m, { conn, text }) => {
 
     const interactiveMessage = {
       body: { text: "⏳ *اختر نوع التنظيف الذي تريده:*" },
-      footer: { text: "𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻" },
+      footer: { text: " 𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻" },
       header: {
-        title: "╭───⟢❲ 𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻 ❳╰───⟢",
+        title: "╭───⟢❲  𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻 ❳╰───⟢",
         hasMediaAttachment: true,
         imageMessage: messa.imageMessage,
       },

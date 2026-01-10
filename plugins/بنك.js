@@ -34,14 +34,14 @@ const handler = async (m, { conn, usedPrefix }) => {
 ┃ 💸 اكتب ⟪ .سحب ⟫ لسحب الأموال!
 ╰━━━══━━❪💳❫━━══━━━╯`;
 
-    const imageUrl = 'https://i.postimg.cc/d1LW67hm/file-00000000c0ec622f8bff523637740179.png'; 
+    const imageUrl = 'https://files.catbox.moe/zacb89.jpg'; 
 
     await conn.relayMessage(m.chat, {
         viewOnceMessage: {
             message: {
                 interactiveMessage: {
-                    header: { title: `𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻` },
-                    body: { text: response, subtitle: "𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻 ❞┊" },
+                    header: { title: 𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻` },
+                    body: { text: response, subtitle: " 𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻 ❞┊" },
                     header: {
                         hasMediaAttachment: true,
                         ...(await prepareWAMessageMedia({ image: { url: imageUrl } }, { upload: conn.waUploadToServer }, { quoted: m }))
@@ -62,7 +62,7 @@ const handler = async (m, { conn, usedPrefix }) => {
                             }
                         ]
                     },
-                    messageParamsJson: '𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻 ❞┊'
+                    messageParamsJson: '𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻 ❞┊'
                 }
             }
         }

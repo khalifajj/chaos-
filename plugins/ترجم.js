@@ -25,11 +25,11 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
         "cy": "Welsh", "xh": "Xhosa", "yi": "Yiddish", "yo": "Yoruba", "zu": "Zulu"
     };
 
-    const imagurl = 'https://i.postimg.cc/d1LW67hm/file-00000000c0ec622f8bff523637740179.png';
-    let chname = '𝒁𝒂𝒐𝒇𝒂𝒏';
-    let chid = '120363420242552568@newsletter';
+    const imagurl = 'https://files.catbox.moe/zacb89.jpg';
+    let chname = '𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻';
+    let chid = '120363397158209081@newsletter';
 
-    let caption = `📖 *النص:* ${text}\n🌍 *اختر اللغة التي تريد الترجمة إليها:*`;
+    let caption = `📖 *النص:* ${text}\n😼 *اختر اللغة التي تريد الترجمة إليها:*`;
 
     const interactiveMessage = {
         body: { text: caption },
@@ -49,7 +49,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
             },
             externalAdReply: {
                 showAdAttribution: true,
-                title: "𝑩𝒂𝒃𝒚𝒍𝒐𝒏⦓🍁⦔𝑩𝑶𝑻",
+                title: "𝑭𝑳𝑶𝑩𝑨⇢😼⇠ 𝑩𝑶𝑻",
                 body: "❲ التــرجمة ❳",
                 thumbnailUrl: imagurl,
                 mediaUrl: imagurl,
@@ -66,7 +66,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
                         title: '❲ قائمة اللغات ❳',
                         sections: [
                             {
-                                title: "🌍 اختر لغة الترجمة",
+                                title: "😼 اختر لغة الترجمة",
                                 rows: Object.keys(languages).map(lang => ({
                                     header: languages[lang],
                                     title: `🔄 ترجمة إلى ${languages[lang]}`,

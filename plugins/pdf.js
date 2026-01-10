@@ -12,7 +12,7 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
     // إذا كانت الرسالة تحتوي على صورة مرفقة
     let q = m.quoted ? m.quoted : m;
     let mime = (q.msg || q).mimetype || '';
-    if (!mime) throw '*⌬═━━━═⌬┋⊰🧚🏻‍♀️ ⊱┋⌬═━━━═⌬*\n❍--> اسـتـخـدم (.pdf+الـنـص) لــي تـحـويـل الـنـص لــي مـلـف PDF\n*⌬═━━━═⌬┋⊰🧚🏻‍♀️ ⊱┋⌬═━━━═⌬*';
+    if (!mime) throw '*⌬═━━━═⌬┋⊰😼⊱┋⌬═━━━═⌬*\n❍--> اسـتـخـدم (.pdf+الـنـص) لــي تـحـويـل الـنـص لــي مـلـف PDF\n*⌬═━━━═⌬┋⊰😼⊱┋⌬═━━━═⌬*';
 
     let img = await q.download?.();
     if (!img) throw "*لم أتمكن من تحميل الصورة، حاول مرة أخرى*";

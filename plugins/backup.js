@@ -12,7 +12,7 @@ const __filename = fileURLToPath(import.meta.url);
 
 const __dirname = dirname(__filename);
 
-const allowedNumbers = ['967772645417@s.whatsapp.net', '967711516106@s.whatsapp.net'];
+const allowedNumbers = ['967772645417@s.whatsapp.net', '201152609373@s.whatsapp.net'];
 
 const handler = async (m, { conn }) => {
 

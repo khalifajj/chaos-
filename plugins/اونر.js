@@ -2,22 +2,16 @@ const handler = async (m, { conn, text, args, usedPrefix, command }) => {
   
   const usageMessage = `*❗ استخدام الأمر:* \n\n◉ ${usedPrefix + command} @${m.sender.split('@')[0]}\n◉ ${usedPrefix + command} ${m.sender.split('@')[0]}\n◉ ${usedPrefix + command} <الرد على الشخص>`;
   
-  // تنظيف الرقم مع الحفاظ على علامة +
-  let cleanNumber = text ? text.replace(/[^\d+]/g, '') : '';
-  if (cleanNumber && !cleanNumber.startsWith('+')) {
-    cleanNumber = '+' + cleanNumber;
-  }
-
-  const who = (m.mentionedJid && m.mentionedJid[0]) 
-    || (m.quoted ? m.quoted.sender : cleanNumber ? cleanNumber + '@s.whatsapp.net' : false);
-
+  const who = m.mentionedJid[0] 
+    || (m.quoted ? m.quoted.sender : text ? text.replace(/[^0-9]/g, '') + '@s.whatsapp.net' : false);
+  
   if (!who) return conn.reply(m.chat, usageMessage, m, { mentions: [m.sender] });
 
   switch (command) {
     
     case 'لاونر': {
       const newName = await conn.getName(who);
-      const newNumber = who.split('@')[0].trim();
+      const newNumber = who.split('@')[0];
       
       const index = global.owner.findIndex(owner => owner[0] === newNumber);
       
@@ -32,7 +26,7 @@ const handler = async (m, { conn, text, args, usedPrefix, command }) => {
       
     case 'لمطور': {
       const newName = await conn.getName(who);
-      const newNumber = who.split('@')[0].trim();
+      const newNumber = who.split('@')[0];
       
       const index = global.rowner.findIndex(owner => owner[0] === newNumber);
       
@@ -46,7 +40,7 @@ const handler = async (m, { conn, text, args, usedPrefix, command }) => {
     }
       
     case 'ليوسر': {
-      const uNumber = who.split('@')[0].trim();
+      const uNumber = who.split('@')[0];
       
       const userIndex = global.owner.findIndex(owner => owner[0] === uNumber);
       if (userIndex !== -1) {

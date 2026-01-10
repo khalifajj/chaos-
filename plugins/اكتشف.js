@@ -27,8 +27,8 @@ let handler = async (m, { conn, args }) => {
     if (json.status !== 'success' || !json.result) return m.reply('❌︙ما قدرت أتعرف على الأغنية');
 
     let result = json.result;
-    let msg = `🧚🏻‍♀️ ︙تم التعرف على الأغنية:\n\n` +
-              `🧚🏻‍♀️  الاسم: *${result.title}*\n` +
+    let msg = `😼 ︙تم التعرف على الأغنية:\n\n` +
+              `😼  الاسم: *${result.title}*\n` +
               `👤 الفنان: *${result.artist}*\n` +
               (result.album ? `💿 الألبوم: *${result.album}*\n` : '') +
               (result.release_date ? `🗓️ تاريخ الإصدار: *${result.release_date}*\n` : '') +
